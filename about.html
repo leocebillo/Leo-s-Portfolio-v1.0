@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Leo</title>
+<meta name="description" content="About Leo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Leo<span class="brand-dot">.</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="photography.html"><span class="nav-idx">01</span>Photography</a>
+    <a href="music.html"><span class="nav-idx">02</span>Music</a>
+    <a href="coding.html"><span class="nav-idx">03</span>Code</a>
+    <a href="calendar.html"><span class="nav-idx">04</span>Calendar</a>
+    <span class="active" aria-current="page"><span class="nav-idx">05</span>About</span>
+    <a href="index.html#contact"><span class="nav-idx">06</span>Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="section section-about">
+    <div class="section-head">
+      <p class="eyebrow mono">05 / about</p>
+      <h2>Who I am.</h2>
+    </div>
+
+    <p class="about-text">
+      I'm Leo — an 18-year-old photographer, musician, and developer based in
+      Texas. Three different crafts, but they all come from the same place:
+      I like making things, seeing them through, and getting a little better
+      each time I pick the camera, the guitar, or the keyboard back up.
+    </p>
+
+    <div class="section-head" style="margin-top:56px; margin-bottom:28px">
+      <p class="eyebrow mono">how I got here</p>
+      <h3 style="font-size:22px">Three stories, three crafts.</h3>
+    </div>
+    <div class="origin-grid">
+      <div class="origin-block">
+        <h4>Photography</h4>
+        <p>I started off taking decent photos with my phone and received positive feedback, which encouraged me to try more when taking pictures even getting into editing them. Eventually, I invested in a Nikon D7500 and a Nikkor 55–300mm lens to take my photography to the next level.</p>
+      </div>
+      <div class="origin-block">
+        <h4>Music</h4>
+        <p>I originally learned how to play guitar from my Elementary school music teacher as she had a Guitar Club. From that day on, I knew I loved music and I learned over time how to express myself through lyrics and slowly learned how to produce music on my own.</p>
+      </div>
+      <div class="origin-block">
+        <h4>Code</h4>
+        <p>Usually, I have a lot of time on my hands and I decided to learn how to make a simple website for myself. After realizing I learned quickly and was getting the hang of it, I decided to continue pursuing coding.</p>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:56px; margin-bottom:32px">
+      <p class="eyebrow mono">what I do</p>
+      <h3 style="font-size:22px">Three things, one person.</h3>
+    </div>
+    <div class="pillar-grid">
+      <a href="photography.html" class="pillar-card">
+        <h3>Photography →</h3>
+        <p>Shooting on a Nikon D7500 with a Nikkor 55–300mm lens, editing in
+          Lightroom Mobile. POV clips go up on
+          <span class="pillar-highlight">YouTube</span>.</p>
+      </a>
+      <a href="music.html" class="pillar-card">
+        <h3>Music →</h3>
+        <p>Producing music and working on my vocals for new songs! "Revealing Blossoms" and "After the Bloom" are up now.</p>
+      </a>
+      <a href="coding.html" class="pillar-card">
+        <h3>Code →</h3>
+        <p>Built a full ordering site for a bakery client, and this
+          portfolio itself — hand-coded, pure determination, served off a
+          Raspberry Pi.</p>
+      </a>
+    </div>
+
+    <div class="section-head" style="margin-top:56px; margin-bottom:24px">
+      <p class="eyebrow mono">quick facts</p>
+    </div>
+    <ul class="gear-list mono" style="margin-bottom:36px">
+      <li><span class="gear-label">Based in</span><span>Texas</span></li>
+      <li><span class="gear-label">Languages</span><span>English &amp; Spanish</span></li>
+      <li><span class="gear-label">Background</span><span>Mexican-American</span></li>
+      <li><span class="gear-label">Setup</span><span>Victus - HP Gaming Laptop, Snowball Mic, HyperX Cloud III</span></li>
+      <li><span class="gear-label">Hobbies</span><span>Gaming, making music, and coding.</span></li>
+      <li><span class="gear-label">Currently</span><span>Working on my Roblox game, releasing 2 songs, and working on this site.</span></li>
+    </ul>
+
+    <div class="socials mono">
+      <a href="https://github.com/leocebillo">Github</a>
+      <a href="https://www.instagram.com/leocebillo/">Instagram</a>
+      <a href="https://soundcloud.com/leocebillo/tracks">Soundcloud</a>
+      <a href="https://open.spotify.com/artist/6a5sOU5WnglyTSej2QoIKZ">Spotify</a>
+      <a href="https://www.tiktok.com/@leocebillo?is_from_webapp=1&sender_device=pc">Tiktok</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <span>© <span id="year"></span> Leo Cebillo</span>
+  <span>Built on a Raspberry Pi 4.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography — Leo</title>
+<meta name="description" content="Photography portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Leo<span class="brand-dot">.</span></a>
+  <nav class="nav" aria-label="Primary">
+    <span class="active" aria-current="page"><span class="nav-idx">01</span>Photography</span>
+    <a href="music.html"><span class="nav-idx">02</span>Music</a>
+    <a href="coding.html"><span class="nav-idx">03</span>Code</a>
+    <a href="calendar.html"><span class="nav-idx">04</span>Calendar</a>
+    <a href="about.html"><span class="nav-idx">05</span>About</a>
+    <a href="index.html#contact"><span class="nav-idx">06</span>Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">01 / photography</p>
+      <h2>Personal Favorites.</h2>
+      <p class="section-sub">Some of my favorite shots where I'm from!</p>
+    </div>
+    <div class="contact-sheet" id="photoGrid">
+      <figure class="frame">
+        <div class="frame-img"><img src="assets/photos/pic1.JPG" alt="A pink rose in bloom" loading="lazy"></div>
+        <figcaption class="mono">Beautiful Flower</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="frame-img"><img src="assets/photos/pic2.JPG" alt="Front of a blue Dodge Charger SRT" loading="lazy"></div>
+        <figcaption class="mono">Front · Blue Dodge Charger SRT</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="frame-img"><img src="assets/photos/pic3.JPG" alt="Rear of a blue Dodge Charger SRT at dusk" loading="lazy"></div>
+        <figcaption class="mono">Back · Blue Dodge Charger SRT</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="frame-img"><img src="assets/photos/pic4.jpg" alt="A curious squirrel on campus grass" loading="lazy"></div>
+        <figcaption class="mono">Curious Campus Squirrel</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="frame-img"><img src="assets/photos/pic5.JPG" alt="A yellow-bellied bird perched in a tree" loading="lazy"></div>
+        <figcaption class="mono">Bird in Nature</figcaption>
+      </figure>
+      <figure class="frame">
+        <div class="frame-img"><img src="assets/photos/pic6.JPG" alt="American flag and Texan flag flying together" loading="lazy"></div>
+        <figcaption class="mono">American Flag · Texan Flag</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="section-head">
+      <p class="eyebrow mono">kit</p>
+      <h2>My Photography Gear</h2>
+    </div>
+    <div class="kit-grid">
+      <div>
+        <ul class="gear-list mono">
+          <li><span class="gear-label">Camera</span><span>Nikon D7500</span></li>
+          <li><span class="gear-label">Lens</span><span>Nikkor 55–300mm</span></li>
+          <li><span class="gear-label">Edit</span><span>Lightroom Mobile</span></li>
+          <li><span class="gear-label">Record</span><span>GoPro Hero</span></li>
+          <li><span class="gear-label">Charging</span><span>INIU Power Bank 20000mAh</span></li>
+        </ul>
+        <a href="https://youtube.com/@shotby_leoc?si=4rY8879f5fSptNXj" target="_blank" rel="noopener" class="btn btn-primary yt-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M10 15l5.19-3L10 9v6zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+          Watch POV photography on YouTube
+        </a>
+      </div>
+      <div class="brand-block">
+        <img src="assets/images/shotby_leoc.png" alt="Leo's photography logo" class="brand-logo"
+             onerror="this.style.display='none'">
+        <blockquote class="brand-quote">"Never put off until tomorrow, what can be done today." - Sensei Wu (Lego Ninjago)</blockquote>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <span>© <span id="year"></span> Leo Cebillo</span>
+  <span>Built on a Raspberry Pi 4.</span>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

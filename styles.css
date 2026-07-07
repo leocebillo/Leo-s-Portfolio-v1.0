@@ -57,12 +57,13 @@ p{ margin:0; }
 
 /* ---------- Topbar ---------- */
 .topbar{
-  position:sticky; top:0; z-index:50;
+  position:fixed; top:0; left:0; right:0; z-index:50;
   display:flex; align-items:center; justify-content:space-between;
   padding:20px 32px;
   background:var(--ink);
   border-bottom:1px solid var(--line);
 }
+main{ padding-top:72px; }
 .brand{ font-family:var(--font-display); font-size:20px; font-weight:700; }
 .brand-dot{ color:var(--brass); }
 .nav{ display:flex; gap:28px; }
@@ -79,7 +80,7 @@ p{ margin:0; }
 
 @media (max-width: 860px){
   .nav{
-    position:fixed; inset:64px 0 0 0; background:var(--ink); z-index:55;
+    position:fixed; inset:72px 0 0 0; background:var(--ink); z-index:55;
     flex-direction:column; gap:0; padding:12px 32px;
     transform:translateY(-8px); opacity:0; pointer-events:none; transition:all .25s ease;
   }
